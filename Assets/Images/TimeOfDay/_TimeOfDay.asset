@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c5e17e10fb54caba1e3f2b48e167c8, type: 3}
+  m_Name: _TimeOfDay
+  m_EditorClassIdentifier: 
+  screenshots:
+  - image: {fileID: 2800000, guid: be1ac1e2cf0cc417f8ebfec945071857, type: 3}
+    exposure: 1
+  - image: {fileID: 2800000, guid: ebfcee03e04cc4709874795169043334, type: 3}
+    exposure: 2.6
+  - image: {fileID: 2800000, guid: c02f7539d640d4179865673bf706ba24, type: 3}
+    exposure: 2
+  - image: {fileID: 2800000, guid: e5a43661dda1c4c5aa2e957409d5d79b, type: 3}
+    exposure: 1.5
+  - image: {fileID: 2800000, guid: 6a709a8efe8434f038fde9e38e21e71c, type: 3}
+    exposure: 1.3
+  - image: {fileID: 2800000, guid: 6c3b09e047b86484899986913d2814a7, type: 3}
+    exposure: 1.35

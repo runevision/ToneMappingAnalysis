@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742508ca71f1c4953b9a64ed43ed2508, type: 3}
+  m_Name: _LUTSet
+  m_EditorClassIdentifier: 
+  mappings:
+  - active: 1
+    shader: {fileID: 4800000, guid: b46de6454f1dd4e668c733aaaf22803c, type: 3}
+    lut: {fileID: 0}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: bf406fc98bc824af6b3e8c135c19ef87, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: a3092daa160d148abbc6863c891195b2, type: 3}
+    multiplier: 1.68
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 624becf903c744d61a9a4deee6b8e996, type: 3}
+    multiplier: 2.5
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: ca44a91cf5df146f6892843db157c91c, type: 3}
+    multiplier: 2.5
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 484a76a0bcfc742d098f980f49b0cc41, type: 3}
+    multiplier: 2.5
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: be69c04ded5e94d1cb4332e84b0296f7, type: 3}
+    multiplier: 1.68
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 362b57d3213904a33af7f3ce92c8dfcc, type: 3}
+    multiplier: 1.68
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 6b258b8c3b309489c8be9a9328210513, type: 3}
+    multiplier: 1.68
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 74951570bbd1044b2b169f57541e4254, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: a424e583f90e4477787319f2ce8b3d9e, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 70d6e9a3748194f64a836a2eddcbcb7c, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: c5c06c0176fc94a42a5f040000f68713, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 7320aa9555e6d46fca93ea1c7758a5f2, type: 2}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: c49b4da0df22642d78bb8edd6bd73300, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 8c89e1bc653c34cd88b351a1c0595293, type: 3}
+    multiplier: 1.1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 64b6597169c024d14947b6ae75f72984, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 40eaa981894164c2e94185bb43af20b7, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 965452bd476454057978003fff8519ad, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: e8fbf0658a38e4e8791f642fa39cb7e0, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 1
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 426f6f5dae3a9d910851b3c22d0a9d1b, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 6b427d8765baab576830a89c03f27bda, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 78158ddb1ab020ac69de04553be5e49a, type: 3}
+    multiplier: 1
+    shaderTest: 0
+  - active: 0
+    shader: {fileID: 4800000, guid: c84b25abf400e47ca981dce5047f8b8c, type: 3}
+    lut: {fileID: 11700000, guid: 8ca6c3f043e9246ec9f563bf7e546012, type: 3}
+    multiplier: 1.7
+    shaderTest: 0

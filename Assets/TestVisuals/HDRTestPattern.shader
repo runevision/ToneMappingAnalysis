@@ -1,0 +1,87 @@
+Shader "Unlit/HDRTestPattern"
+{
+	SubShader
+	{
+		Tags
+		{
+			"RenderType"="Opaque"
+		}
+		LOD 100
+
+		Pass
+		{
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+
+			#include "UnityCG.cginc"
+
+			struct appdata {
+				float4 vertex : POSITION;
+				float2 uv : TEXCOORD0;
+			};
+
+			struct v2f {
+				float2 uv : TEXCOORD0;
+				float4 vertex : SV_POSITION;
+			};
+
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
+
+			v2f vert(appdata v)
+			{
+				v2f o;
+				o.vertex = UnityObjectToClipPos(v.vertex);
+				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+				return o;
+			}
+
+			float3 Hue(float H)
+			{
+				float R = abs(H * 6 - 3) - 1;
+				float G = 2 - abs(H * 6 - 2);
+				float B = 2 - abs(H * 6 - 4);
+				return saturate(float3(R, G, B));
+			}
+
+			float4 HSVtoRGB(in float3 HSV)
+			{
+				return float4(((Hue(HSV.x) - 1) * HSV.y + 1) * HSV.z, 1);
+			}
+
+			fixed4 frag(v2f i) : SV_Target
+			{
+				float2 uv = i.uv;
+				float3 col = 0;
+
+				// Scale and translate
+				float2 uv2 = lerp(0.5, uv - float2(0.0, -0.15), 1/float2(0.9, 0.2));
+				if (abs(uv2.x-0.5) < 0.5 && abs(uv2.y-0.5) < 0.5)
+					col = HSVtoRGB(float3(uv2.y, 1, uv2.x * 4));
+
+				//UNITY_UNROLL
+				for (int a = 0; a < 4; a++)
+				{
+					float x = (a / 3.0 - 0.5) * 0.7;
+					uv2 = lerp(0.5, uv - float2(x, 0.15), 1/float2(0.2, 0.2));
+					if (abs(uv2.x-0.5) < 0.5 && abs(uv2.y-0.5) < 0.5)
+						col = HSVtoRGB(float3(uv2.y, uv2.x, (a + 1.0) / 4.0));
+				}
+
+				for (int a = 0; a <= 8; a++)
+				{
+					float x = (a / 8.0 - 0.5) * 0.9;
+					uv2 = uv - 0.5 - float2(x, 0);
+					if (length(uv2) < 0.02)
+						col = a / 8.0;
+					else if (length(uv2) < 0.025 && uv2.x < 0)
+						col = 1;
+				}
+
+				return fixed4(col, 1);
+			}
+			ENDCG
+		}
+	}
+}
